@@ -39,12 +39,23 @@ VLOOKUP) or new data, derived from existing data
 • Can add additional filters only with CALCULATE
 <img src="images/filter_context.png">
 
-## Relationships and Filter Context
+## Filter Context
+Filter context is added when you specify filter constraints on the set of values allowed in a column or table, by using arguments to a formula. Filter context applies on top of other contexts, such as row context or query context.
+
+For example, a PivotTable calculates its values for each cell based on the row and column headings, as described in the preceding section on query context. However, within the measures or calculated columns that you add to the PivotTable, you can specify filter expressions to control the values that are used by the formula. You can also selectively clear the filters on particular columns.
+
+For more information about how to create filters within formulas, see the [FILTER Function](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2012/ee634966%28v%3dsql.110%29).
+
+For an example of how filters can be cleared to create grand totals, see the [ALL Function](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2012/ee634802%28v%3dsql.110%29).
+
+For examples of how to selectively clear and apply filters within formulas, see the [ALLEXCEPT Function](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2012/ee634795%28v%3dsql.110%29).
+
+Therefore, you must review the definition of measures or formulas used in a PivotTable so that you are aware of filter context when interpreting the results of formulas.
 
 
 
-## Measures and Filter Context
 
+Allington, Matt. Learn to Write DAX: A practical guide to learning Power Pivot for Excel and Power BI (Kindle Locations 219-228). Holy Macro! Books. Kindle Edition. 
 
 
 
